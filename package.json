@@ -1,0 +1,24 @@
+{
+  "name": "chemo",
+  "version": "1.0.0",
+  "description": "An extension to clean tracking cancer links",
+  "main": "\"\"",
+  "scripts": {
+    "test": "npm run test",
+    "dev": "web-ext run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottdj92/chemo.git"
+  },
+  "author": "Scott Jones",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scottdj92/chemo/issues"
+  },
+  "homepage": "https://github.com/scottdj92/chemo#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "web-ext": "^4.0.0"
+  }
+}
