@@ -1,0 +1,24 @@
+{
+  "name": "anteater",
+  "version": "1.0.0",
+  "description": "An extension to eat ANTs",
+  "main": "\"\"",
+  "scripts": {
+    "test": "npm run test",
+    "dev": "web-ext run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottdj92/anteater.git"
+  },
+  "author": "Scott Jones",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scottdj92/anteater/issues"
+  },
+  "homepage": "https://github.com/scottdj92/anteater#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "web-ext": "^4.0.0"
+  }
+}
