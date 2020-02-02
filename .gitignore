@@ -59,3 +59,11 @@ typings/
 
 # next.js build output
 .next
+
+# web-ext build files
+web-ext-artifacts
+
+# webpack output
+dist
+
+.DS_Store
