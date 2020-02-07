@@ -27,7 +27,7 @@ document.addEventListener("copy", (doc) => {
         doc.preventDefault();
         const keys = url.search.split("?")[1].split("&");
         const saved = keys.filter((key) => !blacklist.includes(key.split("=")[0]));
-        const full = `${url.origin}${url.pathname}?${saved.join("&")}`;
+        const full = `${url.origin}${url.pathname}${saved.length > 1 ? "?" : ""}${saved.join("&")}`;
         navigator.clipboard.writeText(full);
     } catch (err) {
         void(0);
