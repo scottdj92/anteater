@@ -20,16 +20,18 @@ const blacklist = [
 ];
 
 document.addEventListener("copy", (doc) => {
-    doc.preventDefault();
     const url = decodeURIComponent(doc.target.value);
-    const params = url.split("?")[1];
-    const keys = params.split("&");
-    // we have all of the params split by key=val
-    // check to see if any one of them matches the blacklist. if it does, remove it.
-    const saved = keys.filter((key) => !blacklist.includes(key.split("=")[0]));
-    // re-join all values
-    const joined = saved.join("&");
-    const full = url.split("?")[0] + joined;
-    // now save to latest clipboard entry
-    navigator.clipboard.writeText(full);
+    if (url !== "undefined") {
+        doc.preventDefault();
+        const params = url.split("?")[1];
+        const keys = params.split("&");
+        // we have all of the params split by key=val
+        // check to see if any one of them matches the blacklist. if it does, remove it.
+        const saved = keys.filter((key) => !blacklist.includes(key.split("=")[0]));
+        // re-join all values
+        const joined = saved.join("&");
+        const full = url.split("?")[0] + joined;
+        // now save to latest clipboard entry
+        navigator.clipboard.writeText(full);
+    }
 });
